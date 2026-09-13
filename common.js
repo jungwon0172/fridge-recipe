@@ -15,3 +15,12 @@ function setCookieConsent(accepted){
     }
   }catch(e){}
 })();
+window.addEventListener('DOMContentLoaded', function(){
+  var hamb = document.getElementById('hamb-btn');
+  var menu = document.getElementById('mobile-menu');
+  if(hamb && menu){
+    hamb.addEventListener('click', function(){
+      menu.classList.toggle('open');
+    });
+  }
+});

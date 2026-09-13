@@ -28,6 +28,13 @@
       <a href="about.html">소개</a>
       <a href="contact.html">문의</a>
     </nav>
+    <button class="hamb" id="hamb-btn" aria-label="메뉴 열기"><span></span><span></span><span></span></button>
+    <nav class="mobile-menu" id="mobile-menu">
+      <a href="index.html">재료 매칭</a>
+      <a href="about.html">소개</a>
+      <a href="contact.html">문의</a>
+      <a href="privacy.html">개인정보처리방침</a>
+    </nav>
   </div>
 </header>
 
@@ -42,55 +49,103 @@
         <span class="label">// 냉장고 문을 열고 재료를 선택하세요</span>
         <span class="match-count">선택한 재료 <b id="match-count-num">0</b>개</span>
       </div>
-      <div class="chip-grid" id="chip-grid">
-        <button type="button" class="chip" data-ing="간장" style="--m-color:#5E8367">간장</button>
-<button type="button" class="chip" data-ing="감자" style="--m-color:#5E8367">감자</button>
-<button type="button" class="chip" data-ing="계란" style="--m-color:#6F97B8">계란</button>
-<button type="button" class="chip" data-ing="고추장" style="--m-color:#D9A441">고추장</button>
-<button type="button" class="chip" data-ing="김" style="--m-color:#9C84B8">김</button>
-<button type="button" class="chip" data-ing="김치" style="--m-color:#5E8367">김치</button>
-<button type="button" class="chip" data-ing="다시마" style="--m-color:#6F97B8">다시마</button>
+
+      <div class="search-row">
+        <div class="search-box">
+          <input type="text" id="ingredient-search" placeholder="재료 이름으로 검색 (예: 대파)">
+        </div>
+        <div class="add-box">
+          <input type="text" id="add-ingredient-input" placeholder="목록에 없는 재료 직접 추가">
+          <button type="button" id="add-ingredient-btn">추가</button>
+        </div>
+      </div>
+      <div class="no-result-add" id="no-result-add">
+        검색 결과가 없어요. '<span id="no-result-add-label"></span>' 재료를 그대로 추가할까요?
+        <button type="button" id="no-result-add-btn">추가하기</button>
+      </div>
+      <div class="custom-row" id="custom-row"></div>
+
+      <div id="ingredient-groups">
+        <div class="ing-cat-group" data-cat-group="채소">
+  <div class="ing-cat-title">채소</div>
+  <div class="chip-grid"><button type="button" class="chip" data-ing="감자" style="--m-color:#9C84B8">감자</button>
 <button type="button" class="chip" data-ing="당근" style="--m-color:#9C84B8">당근</button>
 <button type="button" class="chip" data-ing="대파" style="--m-color:#9C84B8">대파</button>
-<button type="button" class="chip" data-ing="돈까스소스" style="--m-color:#E1795F">돈까스소스</button>
-<button type="button" class="chip" data-ing="돼지고기" style="--m-color:#9C84B8">돼지고기</button>
-<button type="button" class="chip" data-ing="된장" style="--m-color:#6F97B8">된장</button>
-<button type="button" class="chip" data-ing="두부" style="--m-color:#9C84B8">두부</button>
-<button type="button" class="chip" data-ing="라면" style="--m-color:#E1795F">라면</button>
-<button type="button" class="chip" data-ing="마늘" style="--m-color:#6F97B8">마늘</button>
-<button type="button" class="chip" data-ing="마요네즈" style="--m-color:#5E8367">마요네즈</button>
-<button type="button" class="chip" data-ing="만두" style="--m-color:#E1795F">만두</button>
-<button type="button" class="chip" data-ing="무" style="--m-color:#5E8367">무</button>
-<button type="button" class="chip" data-ing="밥" style="--m-color:#E1795F">밥</button>
-<button type="button" class="chip" data-ing="버섯" style="--m-color:#9C84B8">버섯</button>
-<button type="button" class="chip" data-ing="버터" style="--m-color:#6F97B8">버터</button>
-<button type="button" class="chip" data-ing="베이컨" style="--m-color:#5E8367">베이컨</button>
-<button type="button" class="chip" data-ing="부침가루" style="--m-color:#E1795F">부침가루</button>
-<button type="button" class="chip" data-ing="새우젓" style="--m-color:#E1795F">새우젓</button>
-<button type="button" class="chip" data-ing="설탕" style="--m-color:#6F97B8">설탕</button>
-<button type="button" class="chip" data-ing="소면" style="--m-color:#6F97B8">소면</button>
-<button type="button" class="chip" data-ing="소시지" style="--m-color:#E1795F">소시지</button>
-<button type="button" class="chip" data-ing="스팸" style="--m-color:#D9A441">스팸</button>
-<button type="button" class="chip" data-ing="식빵" style="--m-color:#D9A441">식빵</button>
-<button type="button" class="chip" data-ing="식용유" style="--m-color:#D9A441">식용유</button>
+<button type="button" class="chip" data-ing="무" style="--m-color:#D9A441">무</button>
+<button type="button" class="chip" data-ing="부추" style="--m-color:#E1795F">부추</button>
+<button type="button" class="chip" data-ing="시금치" style="--m-color:#9C84B8">시금치</button>
 <button type="button" class="chip" data-ing="애호박" style="--m-color:#E1795F">애호박</button>
-<button type="button" class="chip" data-ing="양배추" style="--m-color:#5E8367">양배추</button>
-<button type="button" class="chip" data-ing="양파" style="--m-color:#E1795F">양파</button>
-<button type="button" class="chip" data-ing="어묵" style="--m-color:#6F97B8">어묵</button>
+<button type="button" class="chip" data-ing="양배추" style="--m-color:#9C84B8">양배추</button>
+<button type="button" class="chip" data-ing="양파" style="--m-color:#9C84B8">양파</button>
 <button type="button" class="chip" data-ing="오이" style="--m-color:#E1795F">오이</button>
-<button type="button" class="chip" data-ing="옥수수캔" style="--m-color:#6F97B8">옥수수캔</button>
-<button type="button" class="chip" data-ing="우동면" style="--m-color:#D9A441">우동면</button>
+<button type="button" class="chip" data-ing="청양고추" style="--m-color:#6F97B8">청양고추</button>
+<button type="button" class="chip" data-ing="콩나물" style="--m-color:#5E8367">콩나물</button>
+<button type="button" class="chip" data-ing="가지" style="--m-color:#6F97B8">가지</button>
+<button type="button" class="chip" data-ing="토마토" style="--m-color:#6F97B8">토마토</button>
+<button type="button" class="chip" data-ing="김치" style="--m-color:#9C84B8">김치</button>
+<button type="button" class="chip" data-ing="피망" style="--m-color:#5E8367">피망</button></div>
+</div>
+<div class="ing-cat-group" data-cat-group="육류·가공육">
+  <div class="ing-cat-title">육류·가공육</div>
+  <div class="chip-grid"><button type="button" class="chip" data-ing="돼지고기" style="--m-color:#E1795F">돼지고기</button>
+<button type="button" class="chip" data-ing="베이컨" style="--m-color:#5E8367">베이컨</button>
+<button type="button" class="chip" data-ing="소시지" style="--m-color:#5E8367">소시지</button>
+<button type="button" class="chip" data-ing="스팸" style="--m-color:#E1795F">스팸</button>
+<button type="button" class="chip" data-ing="햄" style="--m-color:#9C84B8">햄</button>
+<button type="button" class="chip" data-ing="소고기" style="--m-color:#E1795F">소고기</button></div>
+</div>
+<div class="ing-cat-group" data-cat-group="수산물">
+  <div class="ing-cat-title">수산물</div>
+  <div class="chip-grid"><button type="button" class="chip" data-ing="새우" style="--m-color:#E1795F">새우</button>
+<button type="button" class="chip" data-ing="어묵" style="--m-color:#6F97B8">어묵</button>
+<button type="button" class="chip" data-ing="오징어" style="--m-color:#E1795F">오징어</button>
+<button type="button" class="chip" data-ing="옥수수캔" style="--m-color:#9C84B8">옥수수캔</button>
+<button type="button" class="chip" data-ing="참치캔" style="--m-color:#5E8367">참치캔</button>
+<button type="button" class="chip" data-ing="새우젓" style="--m-color:#E1795F">새우젓</button>
+<button type="button" class="chip" data-ing="다시마" style="--m-color:#5E8367">다시마</button>
+<button type="button" class="chip" data-ing="진미채" style="--m-color:#E1795F">진미채</button></div>
+</div>
+<div class="ing-cat-group" data-cat-group="달걀·유제품">
+  <div class="ing-cat-title">달걀·유제품</div>
+  <div class="chip-grid"><button type="button" class="chip" data-ing="계란" style="--m-color:#5E8367">계란</button>
 <button type="button" class="chip" data-ing="우유" style="--m-color:#5E8367">우유</button>
-<button type="button" class="chip" data-ing="참기름" style="--m-color:#9C84B8">참기름</button>
-<button type="button" class="chip" data-ing="참치캔" style="--m-color:#D9A441">참치캔</button>
-<button type="button" class="chip" data-ing="청양고추" style="--m-color:#9C84B8">청양고추</button>
-<button type="button" class="chip" data-ing="치즈" style="--m-color:#5E8367">치즈</button>
-<button type="button" class="chip" data-ing="카레가루" style="--m-color:#9C84B8">카레가루</button>
-<button type="button" class="chip" data-ing="케찹" style="--m-color:#5E8367">케찹</button>
-<button type="button" class="chip" data-ing="콩나물" style="--m-color:#E1795F">콩나물</button>
-<button type="button" class="chip" data-ing="피망" style="--m-color:#5E8367">피망</button>
-<button type="button" class="chip" data-ing="햄" style="--m-color:#5E8367">햄</button>
+<button type="button" class="chip" data-ing="치즈" style="--m-color:#D9A441">치즈</button>
+<button type="button" class="chip" data-ing="버터" style="--m-color:#5E8367">버터</button></div>
+</div>
+<div class="ing-cat-group" data-cat-group="곡류·면·빵">
+  <div class="ing-cat-title">곡류·면·빵</div>
+  <div class="chip-grid"><button type="button" class="chip" data-ing="라면" style="--m-color:#E1795F">라면</button>
+<button type="button" class="chip" data-ing="만두" style="--m-color:#9C84B8">만두</button>
+<button type="button" class="chip" data-ing="밥" style="--m-color:#E1795F">밥</button>
+<button type="button" class="chip" data-ing="소면" style="--m-color:#5E8367">소면</button>
+<button type="button" class="chip" data-ing="식빵" style="--m-color:#5E8367">식빵</button>
+<button type="button" class="chip" data-ing="우동면" style="--m-color:#E1795F">우동면</button>
+<button type="button" class="chip" data-ing="떡" style="--m-color:#6F97B8">떡</button></div>
+</div>
+<div class="ing-cat-group" data-cat-group="양념·소스">
+  <div class="ing-cat-title">양념·소스</div>
+  <div class="chip-grid"><button type="button" class="chip" data-ing="간장" style="--m-color:#9C84B8">간장</button>
+<button type="button" class="chip" data-ing="고추장" style="--m-color:#5E8367">고추장</button>
+<button type="button" class="chip" data-ing="된장" style="--m-color:#6F97B8">된장</button>
+<button type="button" class="chip" data-ing="마늘" style="--m-color:#D9A441">마늘</button>
+<button type="button" class="chip" data-ing="마요네즈" style="--m-color:#5E8367">마요네즈</button>
+<button type="button" class="chip" data-ing="부침가루" style="--m-color:#D9A441">부침가루</button>
+<button type="button" class="chip" data-ing="설탕" style="--m-color:#D9A441">설탕</button>
+<button type="button" class="chip" data-ing="식용유" style="--m-color:#9C84B8">식용유</button>
+<button type="button" class="chip" data-ing="참기름" style="--m-color:#D9A441">참기름</button>
+<button type="button" class="chip" data-ing="카레가루" style="--m-color:#E1795F">카레가루</button>
+<button type="button" class="chip" data-ing="케찹" style="--m-color:#D9A441">케찹</button>
+<button type="button" class="chip" data-ing="돈까스소스" style="--m-color:#D9A441">돈까스소스</button>
+<button type="button" class="chip" data-ing="소금" style="--m-color:#E1795F">소금</button></div>
+</div>
+<div class="ing-cat-group" data-cat-group="두부·기타">
+  <div class="ing-cat-title">두부·기타</div>
+  <div class="chip-grid"><button type="button" class="chip" data-ing="두부" style="--m-color:#E1795F">두부</button>
+<button type="button" class="chip" data-ing="김" style="--m-color:#6F97B8">김</button>
+<button type="button" class="chip" data-ing="버섯" style="--m-color:#5E8367">버섯</button></div>
+</div>
       </div>
+
       <div class="fridge-actions">
         <button class="btn ghost" id="clear-btn">전체 초기화</button>
       </div>
@@ -108,15 +163,18 @@
 <button class="tab" data-cat="간식">간식</button>
     </div>
     <div id="results" class="results"></div>
-    <div class="ad-slot">
+    <div class="ad-slot">광고 영역 (AdSense 승인 후 노출)</div>
+<!-- AdSense 승인 후 아래 코드로 교체하세요:
+<div class="ad-slot" style="border:none;background:none;min-height:0;max-height:none;">
   <ins class="adsbygoogle"
        style="display:block"
        data-ad-client="ca-pub-2557338953436433"
-       data-ad-slot="0000000000"
+       data-ad-slot="실제_슬롯_ID_입력"
        data-ad-format="auto"
        data-full-width-responsive="true"></ins>
   <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
 </div>
+-->
   </section>
 </main>
 <footer class="site">
