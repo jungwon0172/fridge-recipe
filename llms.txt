@@ -1,0 +1,88 @@
+# 냉장고 파먹기
+
+> 냉장고에 있는 재료를 선택하면 만들 수 있는 자취생 레시피를 추천하는 한국어 사이트. 레시피 58개, 모든 재료에 큰술·작은술·g·ml 단위의 정확한 계량 표기.
+
+계량 기준: 1큰술=15ml, 1작은술=5ml, 1컵=200ml, 밥 1공기=210g. 모든 레시피는 1~3인분 기준이며 프라이팬·냄비 등 기본 도구로 조리 가능합니다.
+
+## 주요 페이지
+
+- [홈 - 재료 선택 레시피 매칭](https://fridge-recipe-mauve.vercel.app/): 보유 재료를 선택하면 만들 수 있는 레시피를 순서대로 보여줌
+- [사이트 소개](https://fridge-recipe-mauve.vercel.app/about.html)
+- [문의](https://fridge-recipe-mauve.vercel.app/contact.html)
+- [전체 레시피 상세 텍스트](https://fridge-recipe-mauve.vercel.app/llms-full.txt): 모든 레시피의 재료·계량·조리 단계
+
+## 밥 레시피
+
+- [김치볶음밥](https://fridge-recipe-mauve.vercel.app/recipe/kimchi-fried-rice.html): 15분, 쉬움, 필수 재료 김치, 밥, 대파, 계란, 식용유
+- [스팸마요덮밥](https://fridge-recipe-mauve.vercel.app/recipe/spam-mayo-rice.html): 10분, 매우 쉬움, 필수 재료 스팸, 밥, 마요네즈, 간장
+- [참치마요덮밥](https://fridge-recipe-mauve.vercel.app/recipe/tuna-mayo-rice.html): 10분, 매우 쉬움, 필수 재료 참치캔, 밥, 마요네즈, 간장
+- [감자카레](https://fridge-recipe-mauve.vercel.app/recipe/potato-curry.html): 30분, 보통, 필수 재료 감자, 양파, 당근, 카레가루, 밥
+- [당근계란볶음밥](https://fridge-recipe-mauve.vercel.app/recipe/carrot-egg-fried-rice.html): 10분, 쉬움, 필수 재료 당근, 계란, 밥, 간장
+- [버섯버터라이스](https://fridge-recipe-mauve.vercel.app/recipe/mushroom-butter-rice.html): 15분, 쉬움, 필수 재료 버섯, 밥, 간장
+- [간장계란밥](https://fridge-recipe-mauve.vercel.app/recipe/soy-sauce-egg-rice.html): 5분, 매우 쉬움, 필수 재료 계란, 밥, 간장
+- [소시지볶음밥](https://fridge-recipe-mauve.vercel.app/recipe/sausage-fried-rice.html): 15분, 쉬움, 필수 재료 소시지, 밥, 양파, 간장
+- [스팸야채볶음밥](https://fridge-recipe-mauve.vercel.app/recipe/spam-bokkeumbap-doshirak.html): 15분, 쉬움, 필수 재료 스팸, 밥, 당근, 양파
+- [양배추계란덮밥](https://fridge-recipe-mauve.vercel.app/recipe/cabbage-egg-rice.html): 15분, 쉬움, 필수 재료 양배추, 계란, 밥, 간장
+- [베이컨김치볶음밥](https://fridge-recipe-mauve.vercel.app/recipe/kimchi-bacon-fried-rice.html): 15분, 쉬움, 필수 재료 베이컨, 김치, 밥
+- [새우볶음밥](https://fridge-recipe-mauve.vercel.app/recipe/shrimp-fried-rice.html): 15분, 쉬움, 필수 재료 새우, 밥, 계란, 대파
+- [콩나물밥](https://fridge-recipe-mauve.vercel.app/recipe/bean-sprout-rice.html): 25분, 쉬움, 필수 재료 콩나물, 밥, 간장, 대파
+- [참치김치볶음밥](https://fridge-recipe-mauve.vercel.app/recipe/tuna-kimchi-fried-rice.html): 15분, 쉬움, 필수 재료 참치캔, 김치, 밥, 대파
+
+## 면 레시피
+
+- [계란 라면](https://fridge-recipe-mauve.vercel.app/recipe/egg-ramen.html): 10분, 매우 쉬움, 필수 재료 라면, 계란, 대파
+- [치즈라면](https://fridge-recipe-mauve.vercel.app/recipe/cheese-ramen.html): 10분, 매우 쉬움, 필수 재료 라면, 치즈
+- [베이컨버섯파스타](https://fridge-recipe-mauve.vercel.app/recipe/bacon-mushroom-pasta.html): 20분, 보통, 필수 재료 베이컨, 버섯, 우유, 간장
+- [김치우동](https://fridge-recipe-mauve.vercel.app/recipe/kimchi-udon.html): 15분, 쉬움, 필수 재료 우동면, 김치, 간장, 대파
+- [우유카레우동](https://fridge-recipe-mauve.vercel.app/recipe/milk-curry-udon.html): 20분, 보통, 필수 재료 우동면, 카레가루, 우유
+- [김치비빔국수](https://fridge-recipe-mauve.vercel.app/recipe/kimchi-bibim-guksu.html): 15분, 쉬움, 필수 재료 소면, 김치, 고추장, 설탕
+- [라볶이](https://fridge-recipe-mauve.vercel.app/recipe/rabokki.html): 15분, 쉬움, 필수 재료 라면, 떡, 어묵, 고추장
+
+## 국찌개 레시피
+
+- [두부 김치찌개](https://fridge-recipe-mauve.vercel.app/recipe/tofu-kimchi-jjigae.html): 20분, 쉬움, 필수 재료 김치, 두부, 대파, 고추장
+- [어묵국](https://fridge-recipe-mauve.vercel.app/recipe/eomuk-guk.html): 15분, 매우 쉬움, 필수 재료 어묵, 대파, 간장
+- [김치만두국](https://fridge-recipe-mauve.vercel.app/recipe/kimchi-mandu-soup.html): 15분, 쉬움, 필수 재료 만두, 김치, 대파, 간장
+- [된장찌개](https://fridge-recipe-mauve.vercel.app/recipe/soybean-paste-stew.html): 20분, 쉬움, 필수 재료 된장, 두부, 애호박, 대파
+- [참치김치찌개](https://fridge-recipe-mauve.vercel.app/recipe/canned-tuna-kimchi-jjigae.html): 20분, 쉬움, 필수 재료 참치캔, 김치, 대파, 고추장
+- [양파계란국](https://fridge-recipe-mauve.vercel.app/recipe/onion-egg-soup.html): 10분, 매우 쉬움, 필수 재료 양파, 계란, 간장
+- [소고기무국](https://fridge-recipe-mauve.vercel.app/recipe/beef-radish-soup.html): 25분, 보통, 필수 재료 소고기, 무, 대파, 간장
+
+## 반찬 레시피
+
+- [계란두부조림](https://fridge-recipe-mauve.vercel.app/recipe/egg-tofu-jorim.html): 15분, 쉬움, 필수 재료 두부, 계란, 간장, 대파
+- [소시지 야채볶음](https://fridge-recipe-mauve.vercel.app/recipe/sausage-vegetable-stir-fry.html): 15분, 쉬움, 필수 재료 소시지, 양파, 당근, 식용유
+- [콩나물무침](https://fridge-recipe-mauve.vercel.app/recipe/bean-sprout-namul.html): 10분, 매우 쉬움, 필수 재료 콩나물, 대파, 간장
+- [고추장제육볶음](https://fridge-recipe-mauve.vercel.app/recipe/gochujang-pork-bulgogi.html): 20분, 보통, 필수 재료 돼지고기, 고추장, 양파, 대파
+- [스팸김치볶음](https://fridge-recipe-mauve.vercel.app/recipe/spam-kimchi-bokkeum.html): 15분, 쉬움, 필수 재료 스팸, 김치, 대파
+- [애호박계란볶음](https://fridge-recipe-mauve.vercel.app/recipe/zucchini-egg-stir-fry.html): 10분, 쉬움, 필수 재료 애호박, 계란, 식용유
+- [감자조림](https://fridge-recipe-mauve.vercel.app/recipe/potato-jorim.html): 20분, 쉬움, 필수 재료 감자, 간장, 대파
+- [계란찜](https://fridge-recipe-mauve.vercel.app/recipe/gyeranjjim.html): 15분, 쉬움, 필수 재료 계란, 대파
+- [버섯마늘볶음](https://fridge-recipe-mauve.vercel.app/recipe/garlic-butter-mushroom.html): 10분, 매우 쉬움, 필수 재료 버섯, 마늘, 간장
+- [참치양파전](https://fridge-recipe-mauve.vercel.app/recipe/onion-tuna-jeon.html): 15분, 쉬움, 필수 재료 참치캔, 양파, 계란
+- [매콤어묵볶음](https://fridge-recipe-mauve.vercel.app/recipe/spicy-eomuk-bokkeum.html): 15분, 쉬움, 필수 재료 어묵, 고추장, 대파
+- [감자계란샐러드](https://fridge-recipe-mauve.vercel.app/recipe/potato-egg-salad.html): 20분, 쉬움, 필수 재료 감자, 계란, 마요네즈
+- [감자채볶음](https://fridge-recipe-mauve.vercel.app/recipe/potato-carrot-stir-fry.html): 15분, 쉬움, 필수 재료 감자, 당근, 식용유, 소금
+- [부추전](https://fridge-recipe-mauve.vercel.app/recipe/buchujeon.html): 15분, 쉬움, 필수 재료 부추, 부침가루, 계란, 식용유
+- [진미채볶음](https://fridge-recipe-mauve.vercel.app/recipe/jinmichae-bokkeum.html): 15분, 쉬움, 필수 재료 진미채, 마요네즈, 케찹, 설탕
+- [오이무침](https://fridge-recipe-mauve.vercel.app/recipe/spicy-cucumber-muchim.html): 10분, 매우 쉬움, 필수 재료 오이, 고추장, 설탕
+- [감자채전](https://fridge-recipe-mauve.vercel.app/recipe/potato-pancake.html): 15분, 쉬움, 필수 재료 감자, 부침가루, 계란, 식용유
+- [두부스테이크](https://fridge-recipe-mauve.vercel.app/recipe/tofu-steak.html): 15분, 쉬움, 필수 재료 두부, 부침가루, 간장, 식용유
+- [토마토계란볶음](https://fridge-recipe-mauve.vercel.app/recipe/tomato-egg-stir-fry.html): 15분, 쉬움, 필수 재료 토마토, 계란, 설탕
+- [시금치나물](https://fridge-recipe-mauve.vercel.app/recipe/spinach-namul.html): 10분, 매우 쉬움, 필수 재료 시금치, 마늘, 참기름
+- [가지볶음](https://fridge-recipe-mauve.vercel.app/recipe/eggplant-stir-fry.html): 10분, 쉬움, 필수 재료 가지, 간장, 마늘
+- [오징어볶음](https://fridge-recipe-mauve.vercel.app/recipe/squid-gochujang-bokkeum.html): 20분, 보통, 필수 재료 오징어, 고추장, 양파, 대파
+- [계란말이](https://fridge-recipe-mauve.vercel.app/recipe/gyeranmari.html): 15분, 보통, 필수 재료 계란, 당근, 대파, 소금
+
+## 안주 레시피
+
+- [두부김치](https://fridge-recipe-mauve.vercel.app/recipe/kimchi-tofu-bokkeum.html): 15분, 쉬움, 필수 재료 두부, 김치, 대파
+- [콘치즈](https://fridge-recipe-mauve.vercel.app/recipe/corn-cheese.html): 15분, 매우 쉬움, 필수 재료 옥수수캔, 치즈, 마요네즈
+
+## 간식 레시피
+
+- [치즈계란토스트](https://fridge-recipe-mauve.vercel.app/recipe/cheese-egg-toast.html): 10분, 매우 쉬움, 필수 재료 식빵, 계란, 치즈
+- [김치치즈토스트](https://fridge-recipe-mauve.vercel.app/recipe/kimchi-cheese-toast.html): 10분, 쉬움, 필수 재료 식빵, 김치, 치즈
+- [우유식빵토스트](https://fridge-recipe-mauve.vercel.app/recipe/milk-toast.html): 5분, 매우 쉬움, 필수 재료 식빵, 우유, 설탕
+- [매운 떡볶이](https://fridge-recipe-mauve.vercel.app/recipe/tteokbokki.html): 20분, 쉬움, 필수 재료 떡, 어묵, 고추장, 대파
+- [만두전](https://fridge-recipe-mauve.vercel.app/recipe/mandu-jeon.html): 15분, 쉬움, 필수 재료 만두, 계란, 식용유
